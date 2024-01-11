@@ -1,0 +1,304 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Raleway', sans-serif;
+    background-color: #f5fdff;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+
+h1 {
+    margin: 10px 0 20px 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #0077b6;
+}
+
+h2 {
+    margin: 0 0 30px 0;
+    font-size: 1.5em;
+    color: #03045e;
+    font-weight: 700;
+}
+
+.add-book {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 6px;
+    width: 130px;
+    background-color: #023e8a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+
+.add-book:hover {
+    background-color: #0077b6;
+}
+
+dialog {
+    width: 250px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(100px);
+}
+
+/* Styling for the form within the dialog */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the close button */
+.closeBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Styling for labels and input fields */
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-top: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styling for the submit button */
+.submitBtn {
+    background-color: #023e8a;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Styling for the checkbox */
+
+label[for="isRead"] {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#isRead {
+    margin-left: -100px;
+}
+
+/* Optional: Add hover effect for the submit button */
+.submitBtn:hover {
+    background-color: #0077b6;
+}
+
+.display {
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #0077b6;
+    padding: 20px;
+    justify-content: center;
+    width: 140px;
+    height: auto;
+    margin: 20px 0 10px 0;
+    border-radius: 15px;
+}
+
+.book-card p {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.book-card button {
+    margin: 15px 0 2px 0;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+.book-card>p:nth-child(1) {
+    font-weight: 700;
+}
+
+.book-card>p:nth-child(2) {
+    /* color: black; */
+    font-size: .9rem;
+}
+
+.book-card>p:nth-child(3) {
+    /* color: black; */
+    font-size: 1rem;
+}
+
+.book-card>button:nth-child(4) {
+    background-color: rgb(255, 31, 31);
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.book-card>button:nth-child(5) {
+    background-color: #90e0ef;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
